@@ -189,7 +189,6 @@ class App extends Component {
     alert(`Game Over. your score is ${this.state.score}`);
     clearInterval(this.state.intervalId);
     this.setState(initState)
-    console.log(this.state)
   }
 
   render() {
