@@ -194,19 +194,18 @@ class App extends Component {
   render() {
     return (
       <div className='div'>
-        <h1>Score: {this.state.score}</h1>
         <GameRules />
         <DropdownButton className='dropdown' title={this.state.speedButtonName} disabled={this.state.ifSpeedSelectDisabled}>
           <Dropdown.Item eventKey='1' onSelect={this.selectSpeed}>Low</Dropdown.Item>
           <Dropdown.Item eventKey='2' onSelect={this.selectSpeed}>Medium</Dropdown.Item>
           <Dropdown.Item eventKey='3' onSelect={this.selectSpeed}>Fast</Dropdown.Item>
         </DropdownButton>
-        <button  class="button" onClick={() => this.startButton()}>Start game!</button>
-        
+        <button  onClick={() => this.startButton()}>Start game!</button>
+        <h1>Score: {this.state.score}</h1>
         <div className="game-area">
           <Snake snakeCoordinates={this.state.snakeCoordinates} />
           <Food coord={this.state.food} />
-        </div> 
+        </div>
       </div>
     );
   }
