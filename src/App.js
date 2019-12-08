@@ -193,7 +193,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className='div'>
+      <div>
         <GameRules />
         <DropdownButton className='dropdown' title={this.state.speedButtonName} disabled={this.state.ifSpeedSelectDisabled}>
           <Dropdown.Item eventKey='1' onSelect={this.selectSpeed}>Low</Dropdown.Item>

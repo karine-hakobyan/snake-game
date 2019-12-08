@@ -1,11 +1,7 @@
-.div{
-  background-color:whitesmoke;
-  height: 982px;
-}
-
 .game-area{
   position: relative;
-  margin: 0px auto;
+  left: 500px;
+  bottom:  600px;
   width: 1000px;
   height: 750px;
   border: 8px outset rgb(40, 105, 20);
@@ -19,7 +15,6 @@
   background-color: rgb(20, 49, 177);
   border: 1px solid #fff;
   z-index: 2;
-
 }
 
 .snake-food{
@@ -33,9 +28,8 @@
 }
 
 .game-rules-content{
-  position: absolute;
   width: 20%;
-  top: 180px;
+  margin-top: 120px;
   left: 10px;
   font-family: Helvetica;
   color: teal;
@@ -43,25 +37,23 @@
 }
 
 h1{
-  position: relative;
-  padding: 0;
-  text-align: center;
+  margin-left: 900px;
+  padding-top: 30px;
   color: blue;
 }
 
 .dropdown{
-  position: relative;
-  bottom: 110px;
+  margin: 50px 80px;
+  padding: 20px;
+  width: 200px;
 }
 
-button{
-  position: relative;
+.button{
+  margin: 10px 85px;
   width: 10%; 
   height: 50px;
-  top: 650px;
-  left: 60px;
   font-family: Helvetica;
   color: white;
   background-color: blue;
-  font-size: 30px;
+  font-size: 20px; 
 }
